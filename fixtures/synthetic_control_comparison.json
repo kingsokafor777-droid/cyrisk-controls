@@ -1,0 +1,38 @@
+{
+  "comparison_id": "comparison-synthetic-ransomware",
+  "baseline": {
+    "summary_id": "summary-baseline",
+    "scenario_id": "scenario-synthetic-ransomware",
+    "currency": "USD",
+    "central": "250000",
+    "run_hash": "9cda1845c4a1f3dbdb61ec074bf2c7d63dfa19501dcd8636b96e5a5cf014c696",
+    "limitations": "Sealed synthetic scenario summary only."
+  },
+  "candidate": {
+    "summary_id": "summary-candidate",
+    "scenario_id": "scenario-synthetic-ransomware",
+    "currency": "USD",
+    "central": "180000",
+    "run_hash": "9cda1845c4a1f3dbdb61ec074bf2c7d63dfa19501dcd8636b96e5a5cf014c696",
+    "limitations": "Sealed synthetic scenario summary only."
+  },
+  "control": {
+    "control_id": "control-mfa-synthetic",
+    "version": "1.0",
+    "name": "Synthetic MFA control assumption",
+    "effect_dimension": "frequency",
+    "effect_lower": "0.05",
+    "effect_central": "0.15",
+    "effect_upper": "0.30",
+    "cost": {
+      "currency": "USD",
+      "basis": "annual",
+      "lower": "10000",
+      "central": "15000",
+      "upper": "25000"
+    },
+    "evidence_reference": "synthetic-evidence-control",
+    "rationale": "Sealed synthetic assumption; no vendor or causal claim.",
+    "non_causal": true
+  }
+}
